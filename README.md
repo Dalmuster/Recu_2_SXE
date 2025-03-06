@@ -20,10 +20,10 @@
 
 El contenedor se detendra cuando salgas de la sesion, se detiene automaticamente por las opciones -it.
 
-2. Si lanzas un contenedor de Docker sin usar volúmenes ni “bind mount”, y luego haces cambios dentro del contenedor (como crear archivos o carpetas), ¿se mantendrán esos cambios cuando detengas el contenedor y lo vuelvas a arrancar? ¿Por qué?
+-2. Si lanzas un contenedor de Docker sin usar volúmenes ni “bind mount”, y luego haces cambios dentro del contenedor (como crear archivos o carpetas), ¿se mantendrán esos cambios cuando detengas el contenedor y lo vuelvas a arrancar? ¿Por qué?
 
 No se mantendran dado que no tiene donde guardar los cambios.
 
-3. Si ejecutas docker run -p 8090:79 httpd (imagen httpd) E intentas acceder con el navegador a: <Dirección-ip del anfitrión del contenedor>:8080 ¿Qué sucederá?¿Por qué?
+-3. Si ejecutas docker run -p 8090:79 httpd (imagen httpd) E intentas acceder con el navegador a: <Dirección-ip del anfitrión del contenedor>:8080 ¿Qué sucederá?¿Por qué?
 
 No conseguira acceder dado que las ips son diferentes.
