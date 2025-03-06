@@ -2,38 +2,7 @@
 
 #COMPOSE
 
-services:
-  ownclowd:
-    image: owncloud/server  
-    restart: always
-    ports:
-      - "8069:8080"
-    environment:
-      - OWNCLOUD_ADMIN_USERNAME=sxe_admin
-      - OWNCLOUD_ADMIN_PASSWORD=sxe_admin_password
-    depends_on:
-      - mariadb
-    volumes:
-      - /mtn/oc_vol
-
-  mariadb:
-    image: mariadb
-    restart: always
-    environment:
-      - MYSQL_DATABASE=sxe_owncloud_db
-      - MYSQL_USER=sxe_user_db
-      - MYSQL_PASSWORD=sxe_user_password_db
-      - MYSQL_ROOT_PASSWORD=sxe_root_password
-    volumes:
-      - /mtn/db_vol
-
-  adminer:
-    image: adminer
-    restart: always
-    environment:
-      - ADMINER_DESIGN=dracula
-    ports:
-      - 8080:8080
+![imagen](https://github.com/user-attachments/assets/9cba2aaa-711b-4ed7-aa6c-b49920711ceb)
 
 #OWNCLOUD
 
